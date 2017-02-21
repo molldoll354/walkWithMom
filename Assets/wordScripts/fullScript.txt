@@ -1,0 +1,66 @@
+***M: Hey honey! How are you?
+MC: 1. Hey mom, I'm good \n2. I'm doing fine, mom, how about you? \n3. I'm not doing so hot..."
+M: *1* That's good. Everything is fine here, or at least as fine as things can be.
+M: *2* Everything is fine here, or at least as fine as things can be.
+	MC: *1+2* It must be SOOOO boring for you without your darling child\n to keep you company.
+	M: Oh, of /course/. You'll be the darling child at least until Alex comes. She brings us /wine/.
+	MC: Yeah, but she's not nice. She's weird. I'm much nicer and less weird.
+	M: Oh yeah, you're /real/ normal.
+	MC + M: [laughter]
+M: *3* What's wrong?
+	MC: *3* My stomach's been bothering me. I can't tell if it's the reflux, stress, \n or some godforsaken combo of the two.
+	M: When's your doctor's appointment?
+	MC: Not for another week
+	M: If you had made the appointment earlier...
+	MC: How was I supposed to know every kid at NYU needed a gastroenterologist at the same time?
+	M: Well, if you had made it earlier, you would at least be at the head of the gastrointestinally distressed pack.
+	MC: You sure know how to make a girl feel special.
+***MC: Well, are you studying hard? Getting good grades? How are your classes going?
+MC: 1. Considering it's midterms, I'm doing alright 2. I'm drowning just a little bit
+M: *1* Look at you, my super smart college student.
+	MC: Why, thank you. I am pretty great.
+	M: So humble, too!
+	MC: I'm the favorite for a reason, mother.
+	M: Clearly
+M: *2* Drowning? Define drowning.
+	MC: I've just got a lot of work. I've got a big game that I'm working on for Dev, I've got Japanese to study for, and I'm not always great at the whole "time management" thing.
+	M: You know, you have a whole bottle of magical, expensive pills that help with that...
+	MC: I'm taking my Vyvanse! It's hard to manage time with or without ADHD.
+	M: Oh come on
+	MC: You come on! It's hard!
+	M: Alright, alright...
+***MC: 1. How are things at home? 2. What's dad up to?
+	M: *1* Aside from the ever present dread brought on by the state of our nation, it's very boring here.
+	MC: No interesting goings-on?
+	M: Not really. We're meeting up with the Buckmans for dinner tomorrow, though.
+	MC: 1a. That sounds fun, 2a. What's the occaison?
+		M: *1a* Yeah, we're going to some place in Evanston. The Buckmans discovered it on one of their little food adventures. 
+		MC: Ohhh, fancy. I wish I got to go to fancy Buckman restaurants. I live off pasta, basically.
+		M: Good to hear you're eating well.
+		MC: I'm doing better than average for a college student!
+		M: Anyway..
+		M: *2a* We're going because we miss all the great New Trier drama now that you've graduated, and we want to hear all the juicy details from someone who still has an inside source.
+		MC: So basically you're going just to chat and eat nice food.
+		M: Exactly. We're /dying/ to know how the students feel about the Black History Seminar Day.
+		MC: Oooh yeah! I love seeing my highschool show up on Breitbart for pissing off the snotty, Republican parents.
+		M: Right? It's so satisfying.
+	M: *2* Dud's in the basement playing Banjo-Kazooie or something
+	MC: I'm hurt that he's not here, talking to me, the most important part of his whole life. I'm gonna cry.
+	M: Hold on, here he comes... [footsteps, getting louder until stopping]
+	D: Hi Mol!
+	MC: Hi Dud. How's Banjo?
+	D: Still the best. Why don't people make more Banjo games?
+	MC: Do you want the long, game-designy answer or the short answer?
+	D: Let's go with the short one.
+	MC: They are making more Banjo games. There's a big Banjo-type game made by the people who made the original Banjo coming out in the next few months.
+	D: Huh. Alright then. But why don't /you/ make more Banjo?
+	MC: [long winded sigh]
+	D: [hearty laugh] Alright, alright. I'm going back to my game, so keep your mother company for a while longer. Love you, Mol.
+	MC: Love you too, dad. Have fun with Banjo! [footsteps, leading away]
+	M: Anyway, that's what he's been doing. Overall, though? He's got an audition for something coming up, but other than that, he's been up to the usual stuff.
+***M: 
+
+	
+
+
+
