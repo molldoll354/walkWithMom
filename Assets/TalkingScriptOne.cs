@@ -8,6 +8,9 @@ public class TalkingScriptOne : MonoBehaviour
 
 	public Text talkieText;
 	bool spacePress;
+	bool resultUno;
+	bool resultDos;
+	bool resultTres;
 	string activeString;
 	string startString = "Hey honey! How are you?";
 	string optionStringOne = "1. Hey mom, I'm good \n2. I'm doing fine, mom, how about you? \n3. I'm not doing so hot...";
@@ -21,6 +24,9 @@ public class TalkingScriptOne : MonoBehaviour
 	{
 		activeString = startString;
 		spacePress = false;
+		resultUno=false;
+		resultDos=false;
+		resultTres=false;
 		
 	}
 	
@@ -35,28 +41,33 @@ public class TalkingScriptOne : MonoBehaviour
 		//talkieText.text = "" + activeString;
 		if (Input.GetKeyDown (KeyCode.Alpha1) && spacePress == true) {
 			activeString = resultOne;
+			resultUno = true;
+		}
 			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space) && activeString == resultOne) {
+			if (Input.GetKeyDown (KeyCode.Space) && resultUno==true) {
 				activeString = responseOne;
 				//talkieText.text = "" + activeString;
 			}
-		}
+
 		if (Input.GetKeyDown (KeyCode.Alpha2) && spacePress == true) {
 			activeString = resultTwo;
+			resultDos = true;
+		}
 			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space)&& activeString == resultTwo) {
+			if (Input.GetKeyDown (KeyCode.Space)&& resultDos == true) {
 				activeString = responseOne;
 				//talkieText.text = "" + activeString;
 			}
-		}
 		if (Input.GetKeyDown (KeyCode.Alpha3) && spacePress == true) {
 			activeString = resultThree;
+			resultTres = true;
+		}
 			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space)&& activeString == resultThree) {
+			if (Input.GetKeyDown (KeyCode.Space)&& resultTres == true) {
 				activeString = responseTwo;
 				//talkieText.text = "" + activeString;
 			}
 		}
 	}
-}
+
 
