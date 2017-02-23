@@ -11,14 +11,14 @@ public class TalkingScriptOne : MonoBehaviour
 	bool resultUno;
 	bool resultDos;
 	bool resultTres;
-	string activeString;
-	string startString = "Hey honey! How are you?";
+	public static string activeString;
+	string startString = "Mom: Hey honey! How are you?\n(Press SPACE to continue)";
 	string optionStringOne = "1. Hey mom, I'm good \n2. I'm doing fine, mom, how about you? \n3. I'm not doing so hot...";
-	string resultOne = "That's good. Everything is fine here, or at least as fine as things can be.";
-	string resultTwo = "Everything is fine here, or at least as fine as things can be.";
-	string resultThree = "What's wrong?";
-	string responseOne = "It must be SOOOO boring for you without your darling child\n to keep you company";
-	string responseTwo = "My stomach's been bothering me. I can't tell if it's the reflux, stress, \n or some godforsaken combo of the two";
+	string resultOne = "Mom: That's good. Everything is fine here,\n or at least as fine as things can be.";
+	string resultTwo = "Mom: Everything is fine here,\n or at least as fine as things can be.";
+	string resultThree = "Mom: What's wrong?";
+	string responseOne = "Me: It must be SOOOO boring for you without your darling child\n to keep you company";
+	string responseTwo = "Me: My stomach's been bothering me. I can't tell if it's the reflux, stress, \n or some godforsaken combo of the two";
 	// Use this for initialization
 	void Start ()
 	{
