@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class TalkingScriptOne : MonoBehaviour
 {
 
-	public Text talkieText;
+	//public Text talkieText;
 	bool spacePress;
 	bool resultUno;
 	bool resultDos;
 	bool resultTres;
-	public static string activeString;
+	bool enterTrigger;
+	//public static string activeString;
 	string startString = "Mom: Hey honey! How are you?\n(Press SPACE to continue)";
 	string optionStringOne = "1. Hey mom, I'm good \n2. I'm doing fine, mom, how about you? \n3. I'm not doing so hot...";
 	string resultOne = "Mom: That's good. Everything is fine here,\n or at least as fine as things can be.";
@@ -22,51 +23,59 @@ public class TalkingScriptOne : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		activeString = startString;
+		talkingController.activeString = startString;
 		spacePress = false;
 		resultUno=false;
 		resultDos=false;
 		resultTres=false;
-		
+		enterTrigger = false;
 	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		talkieText.text = "" + activeString;
-		if (Input.GetKeyDown (KeyCode.Space) && spacePress == false) {
-			spacePress = true;
-			activeString = optionStringOne;
-		}
+
+	void Update(){
 		//talkieText.text = "" + activeString;
-		if (Input.GetKeyDown (KeyCode.Alpha1) && spacePress == true) {
-			activeString = resultOne;
-			resultUno = true;
-		}
+		if (enterTrigger == true) {
+			if (Input.GetKeyDown (KeyCode.Space) && spacePress == false) {
+				spacePress = true;
+				talkingController.activeString = optionStringOne;
+			}
 			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space) && resultUno==true) {
-				activeString = responseOne;
+			if (Input.GetKeyDown (KeyCode.Alpha1) && spacePress == true) {
+				talkingController.activeString = resultOne;
+				resultUno = true;
+
+			}
+			//talkieText.text = "" + activeString;
+			if (Input.GetKeyDown (KeyCode.Space) && resultUno == true) {
+				talkingController.activeString = responseOne;
 				//talkieText.text = "" + activeString;
 			}
 
-		if (Input.GetKeyDown (KeyCode.Alpha2) && spacePress == true) {
-			activeString = resultTwo;
-			resultDos = true;
-		}
+			if (Input.GetKeyDown (KeyCode.Alpha2) && spacePress == true) {
+				talkingController.activeString = resultTwo;
+				resultDos = true;
+			}
 			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space)&& resultDos == true) {
-				activeString = responseOne;
+			if (Input.GetKeyDown (KeyCode.Space) && resultDos == true) {
+				talkingController.activeString= responseOne;
 				//talkieText.text = "" + activeString;
 			}
-		if (Input.GetKeyDown (KeyCode.Alpha3) && spacePress == true) {
-			activeString = resultThree;
-			resultTres = true;
-		}
+			if (Input.GetKeyDown (KeyCode.Alpha3) && spacePress == true) {
+				talkingController.activeString = resultThree;
+				resultTres = true;
+			}
 			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space)&& resultTres == true) {
-				activeString = responseTwo;
+			if (Input.GetKeyDown (KeyCode.Space) && resultTres == true) {
+				talkingController.activeString = responseTwo;
 				//talkieText.text = "" + activeString;
 			}
+		}
+	}
+	
+	// Update is called once per frame
+	void OnTriggerEnter (Collider other)
+	{
+		enterTrigger = true;
+
 		}
 	}
 
