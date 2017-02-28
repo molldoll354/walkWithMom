@@ -13,7 +13,7 @@ public class NewPizzaScript : MonoBehaviour
 	bool responseUno;
 	//public string activeString;
 	string startString = "Mom: What's up?";
-	string optionStringOne = "Me: 1. I'm wondering if I should get pizza for dinner... \n2. I'm walking by Bravo and the pizza smell is killing me.";
+	string optionStringOne = "1. I'm wondering if I should get pizza for dinner... \n2. I'm walking by Bravo and the pizza smell is killing me.";
 	string resultOne = "Mom: Don't be tempted! Go home and eat something healthy!";
 	string responseOne = "Me: Sure, I'll eat an apple with my spaghetti, then.";
 	string responseCont = "Mom: Not what I meant.";
@@ -40,7 +40,7 @@ public class NewPizzaScript : MonoBehaviour
 				resultUno = true;
 			}
 			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space) && resultUno == true) {
+			if (Input.GetKeyDown (KeyCode.Space) && resultUno == true && responseUno == false) {
 				talkingController.activeString= responseOne;
 				responseUno = true;
 			}
