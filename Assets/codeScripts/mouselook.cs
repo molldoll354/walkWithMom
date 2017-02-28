@@ -19,7 +19,7 @@ public class mouselook : MonoBehaviour {
 		upDownLook -= mouseY;
 		upDownLook = Mathf.Clamp (upDownLook, -80f, 80f);
 		//transform.eulerAngles.z = 0f; doesn't work
-			transform.eulerAngles = new Vector3(upDownLook, transform.eulerAngles.y, 0f); //keeps the camera from rolling away
+		transform.eulerAngles = new Vector3(upDownLook,transform.eulerAngles.y, 0f); //keeps the camera from rolling away
 
 	}
 }

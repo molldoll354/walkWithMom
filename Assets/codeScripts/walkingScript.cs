@@ -19,7 +19,8 @@ public class walkingScript : MonoBehaviour {
 		float horizontal = Input.GetAxis("Horizontal"); //this gives the joystick left and right input
 		float vertical = Input.GetAxis("Vertical");
 		chara.Move(transform.forward *Time.deltaTime *vertical *charaSpeed);
-		transform.Translate (horizontal * Time.deltaTime * charaSpeed, 0f, 0f);
+		chara.Move (transform.right * Time.deltaTime * horizontal * charaSpeed);
+		//transform.Rotate (0, Input.GetAxis ("Mouse X") * Time.deltaTime * charaSpeed, 0);
 		//transform.Rotate(0f, horizontal *Time.deltaTime *90f, 0f);
 		//transform.Rotate(0f,mouseX,0f);
 	//	upDownLook -= mouseY;
