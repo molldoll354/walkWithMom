@@ -20,7 +20,7 @@ public class NewPizzaScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		talkingController.activeString = startString;
+		//
 		triggerEnter = false;
 		spacePress = false;
 		resultUno = false;
@@ -54,6 +54,7 @@ public class NewPizzaScript : MonoBehaviour
 	void OnTriggerEnter (Collider other)
 	{
 		triggerEnter = true;
+		talkingController.activeString = startString;
 
 	}
 }

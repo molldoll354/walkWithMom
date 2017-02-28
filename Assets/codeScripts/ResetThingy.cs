@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ResetThingy : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 		
