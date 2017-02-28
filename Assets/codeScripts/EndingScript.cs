@@ -24,7 +24,7 @@ public class EndingScript : MonoBehaviour {
 				talkingController.activeString = responseString;
 				spacePress = true;
 			}
-			if (Input.GetKeyDown (KeyCode.Space) && spacePress == true) {
+			else if (Input.GetKeyDown (KeyCode.Space) && spacePress == true) {
 				//responseTruth = true;
 				talkingController.activeString = goodbyeString;
 			}

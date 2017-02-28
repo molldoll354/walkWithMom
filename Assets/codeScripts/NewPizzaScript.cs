@@ -44,7 +44,7 @@ public class NewPizzaScript : MonoBehaviour
 				talkingController.activeString= responseOne;
 				responseUno = true;
 			}
-			if (Input.GetKeyDown (KeyCode.Space) && responseUno == true) {
+			else if (Input.GetKeyDown (KeyCode.Space) && responseUno == true) {
 				talkingController.activeString = responseCont;
 			}
 		}

@@ -14,7 +14,7 @@ public class mouselook : MonoBehaviour {
 		float mouseX = Input.GetAxis ("Mouse X") *Time.deltaTime *100f;
 		float mouseY = Input.GetAxis ("Mouse Y") *Time.deltaTime *100f;
 
-		transform.Rotate (0f, mouseX, 0f);
+		//transform.Rotate (0f, mouseX, 0f);
 
 		upDownLook -= mouseY;
 		upDownLook = Mathf.Clamp (upDownLook, -80f, 80f);

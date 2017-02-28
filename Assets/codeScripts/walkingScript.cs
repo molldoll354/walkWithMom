@@ -20,7 +20,7 @@ public class walkingScript : MonoBehaviour {
 		float vertical = Input.GetAxis("Vertical");
 		chara.Move(transform.forward *Time.deltaTime *vertical *charaSpeed);
 		chara.Move (transform.right * Time.deltaTime * horizontal * charaSpeed);
-		//transform.Rotate (0, Input.GetAxis ("Mouse X") * Time.deltaTime * charaSpeed, 0);
+		transform.Rotate (0, Input.GetAxis ("Mouse X") * Time.deltaTime * 80f, 0);
 		//transform.Rotate(0f, horizontal *Time.deltaTime *90f, 0f);
 		//transform.Rotate(0f,mouseX,0f);
 	//	upDownLook -= mouseY;
