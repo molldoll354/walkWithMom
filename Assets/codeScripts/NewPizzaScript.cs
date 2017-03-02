@@ -8,44 +8,31 @@ public class NewPizzaScript : MonoBehaviour
 
 	//public Text talkieText;
 	bool triggerEnter;
-	bool spacePress;
-	bool resultUno;
-	bool responseUno;
 	//public string activeString;
 	string startString = "Mom: What's up?";
-	string optionStringOne = "1. I'm wondering if I should get pizza for dinner... \n2. I'm walking by Bravo and the pizza smell is killing me.";
-	string resultOne = "Mom: Don't be tempted! Go home and eat something healthy!";
-	string responseOne = "Me: Sure, I'll eat an apple with my spaghetti, then.";
-	string responseCont = "Mom: Not what I meant.";
+	string nextOne = "Me: I'm wondering if I should get pizza for dinner... \n I'm walking by Bravo and the smell is killing me.";
+	string nextTwo = "Mom: Don't be tempted! Go home and eat something healthy!";
+	string nextThree = "Me: Sure, I'll eat an apple with my spaghetti, then.";
+	string nextFour = "Mom: Not what I meant.";
 	// Use this for initialization
 	void Start ()
 	{
-		//
 		triggerEnter = false;
-		spacePress = false;
-		resultUno = false;
-		responseUno = false;
 	}
 
 	void Update(){
 		//talkieText.text = "" + activeString;
 		if (triggerEnter == true) {
-			if (Input.GetKeyDown (KeyCode.Space) && spacePress == false) {
-				spacePress = true;
-				talkingController.activeString = optionStringOne;
-			}
-			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Alpha1) || Input.GetKeyDown (KeyCode.Alpha2) && spacePress == true) {
-				talkingController.activeString = resultOne;
-				resultUno = true;
-			}
-			//talkieText.text = "" + activeString;
-			if (Input.GetKeyDown (KeyCode.Space) && resultUno == true && responseUno == false) {
-				talkingController.activeString= responseOne;
-				responseUno = true;
-			}
-			else if (Input.GetKeyDown (KeyCode.Space) && responseUno == true) {
-				talkingController.activeString = responseCont;
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				if (talkingController.activeString == startString) {
+					talkingController.activeString = nextOne;
+				} else if (talkingController.activeString == nextOne) {
+					talkingController.activeString = nextTwo;
+				} else if (talkingController.activeString == nextTwo) {
+					talkingController.activeString = nextThree;
+				} else if (talkingController.activeString == nextThree) {
+					talkingController.activeString = nextFour;
+				} 
 			}
 		}
 	}
