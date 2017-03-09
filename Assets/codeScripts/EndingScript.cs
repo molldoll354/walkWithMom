@@ -21,6 +21,7 @@ public class EndingScript : MonoBehaviour {
 	void Update () {
 		if (triggerEntered == true) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
+				talkingController.textPercentage = 0;
 				if (talkingController.activeString == startString) {
 					talkingController.activeString = responseString;
 				} else if (talkingController.activeString == responseString) {

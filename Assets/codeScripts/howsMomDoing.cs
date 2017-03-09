@@ -20,6 +20,7 @@ public class howsMomDoing : MonoBehaviour {
 	void Update () {
 		if (triggerEntered == true) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
+				talkingController.textPercentage = 0;
 				if (talkingController.activeString == startString) {
 					talkingController.activeString = nextOne;
 				} else if (talkingController.activeString == nextOne) {

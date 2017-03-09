@@ -24,6 +24,7 @@ public class NewPizzaScript : MonoBehaviour
 		//talkieText.text = "" + activeString;
 		if (triggerEnter == true) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
+				talkingController.textPercentage = 0;
 				if (talkingController.activeString == startString) {
 					talkingController.activeString = nextOne;
 				} else if (talkingController.activeString == nextOne) {
@@ -41,6 +42,7 @@ public class NewPizzaScript : MonoBehaviour
 	void OnTriggerEnter (Collider other)
 	{
 		triggerEnter = true;
+		talkingController.textPercentage = 0;
 		talkingController.activeString = startString;
 
 	}

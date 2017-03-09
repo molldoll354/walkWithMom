@@ -1,41 +1,15 @@
 fileFormatVersion: 2
-guid: b6d2a569e0c693145b7ce5b742e4344b
-timeCreated: 1487281248
+guid: c4d4936f8ba8fb34cac02aada278717d
+timeCreated: 1489091759
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: group
-    100002: group1
-    100004: pasted__pCube1
-    100006: pasted__pCylinder2
-    100008: pCube1
-    100010: pCylinder1
-    100012: pCylinder2
-    100014: //RootNode
-    400000: group
-    400002: group1
-    400004: pasted__pCube1
-    400006: pasted__pCylinder2
-    400008: pCube1
-    400010: pCylinder1
-    400012: pCylinder2
-    400014: //RootNode
-    2300000: pasted__pCube1
-    2300002: pasted__pCylinder2
-    2300004: pCube1
-    2300006: pCylinder1
-    2300008: pCylinder2
-    3300000: pasted__pCube1
-    3300002: pasted__pCylinder2
-    3300004: pCube1
-    3300006: pCylinder1
-    3300008: pCylinder2
-    4300000: pCube1
-    4300002: pasted__pCube1
-    4300004: pCylinder1
-    4300006: pCylinder2
-    4300008: pasted__pCylinder2
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: typeMesh1
     9500000: //RootNode
   materials:
     importMaterials: 1

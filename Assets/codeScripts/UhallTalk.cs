@@ -24,6 +24,7 @@ public class UhallTalk : MonoBehaviour
 	{
 		if (triggerEntered == true) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
+				talkingController.textPercentage = 0;
 				if (talkingController.activeString == startString) {
 					talkingController.activeString = nextOne;
 				} else if (talkingController.activeString == nextOne) {

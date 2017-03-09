@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class talkingController : MonoBehaviour {
 	public static string activeString;
 	public Text talkieText;
-	public float timeToType = .2f;
+	public float timeToType;
 	public static float textPercentage = 0;
 
 	// Use this for initialization

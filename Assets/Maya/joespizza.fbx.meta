@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 579991ddfe6ed6f4ea6178280898b56c
-timeCreated: 1489091759
+guid: 20127bb8fbba7cd4380bb40220fa97c4
+timeCreated: 1489091758
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: typeMesh2
+    4300000: typeMesh1
     9500000: //RootNode
   materials:
     importMaterials: 1

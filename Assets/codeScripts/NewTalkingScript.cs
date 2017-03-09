@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewTalkingScript : MonoBehaviour {
+public class NewTalkingScript : MonoBehaviour
+{
 	bool triggerEnter;
 	string startString = "Mom: Hey honey! How are you?\n(Press SPACE to continue)";
 	string convoStart = "Me: Hey mom, I'm good. How are you?";
@@ -14,16 +15,20 @@ public class NewTalkingScript : MonoBehaviour {
 	//string responseTwo = "Me: My stomach's been bothering me.\n I can't tell if it's the reflux, stress, \n or some godforsaken combo of the two";
 	string momResponseOne = "Mom: Oh yeah, I'm so lonely without you.\nI'm crying right now from loneliness.";
 	//string momResponseTwo = "Mom: Hopefully your gastro appointment will get that sorted out.";
+	float timeLeft = 3f;
+	public GameObject triggerBox;
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	//	talkingController.TypingText ();
+	void Update ()
+	{
+		//	talkingController.TypingText ();
 		if (triggerEnter == true) {
-			if (Input.GetKeyDown(KeyCode.Space)) {
+			if (Input.GetKeyDown (KeyCode.Space)) {
 				talkingController.textPercentage = 0;
 				if (talkingController.activeString == startString) {
 					talkingController.activeString = convoStart;
@@ -31,14 +36,21 @@ public class NewTalkingScript : MonoBehaviour {
 					talkingController.activeString = resultOne;
 				} else if (talkingController.activeString == resultOne) {
 					talkingController.activeString = responseOne;
-				} else if (talkingController.activeString == responseOne){
+				} else if (talkingController.activeString == responseOne) {
 					talkingController.activeString = momResponseOne;
 				}
+			}
+			if (talkingController.activeString == momResponseOne) {
+				timeLeft -= Time.deltaTime;
+			}
+			if (timeLeft < 0) {
+				triggerBox.SetActive (false);
 			}
 		}
 	}
 
-	void OnTriggerEnter(Collider other){
+	void OnTriggerEnter (Collider other)
+	{
 		triggerEnter = true;
 		talkingController.activeString = startString;
 	}
