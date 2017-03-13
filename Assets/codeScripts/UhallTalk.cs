@@ -13,6 +13,8 @@ public class UhallTalk : MonoBehaviour
 	string nextThree = "Mom: Do we need a special occaison to\n get together and complain about our kids?";
 	string nextFour = "Me: See, that implies that\n I am somehow flawed.";
 	string nextFive = "Mom: Exactly.";
+	float timeLeft = 2f;
+	public GameObject triggerBox;
 	// Use this for initialization
 	void Start ()
 	{
@@ -36,6 +38,11 @@ public class UhallTalk : MonoBehaviour
 				} else if (talkingController.activeString == nextFour) {
 					talkingController.activeString = nextFive;
 				}
+			}if (talkingController.activeString == nextFive) {
+				timeLeft -= Time.deltaTime;
+			}
+			if (timeLeft < 0) {
+				triggerBox.SetActive (false);
 			}
 		}	
 	}
@@ -43,6 +50,7 @@ public class UhallTalk : MonoBehaviour
 	void OnTriggerEnter (Collider other)
 	{
 		triggerEntered = true;
+		talkingController.textPercentage = 0;
 		talkingController.activeString = "" + startString;
 	}
 }

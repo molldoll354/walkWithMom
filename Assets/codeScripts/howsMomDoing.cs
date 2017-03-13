@@ -10,6 +10,8 @@ public class howsMomDoing : MonoBehaviour {
 	string nextTwo = "Me: What are the Lying Liars Who Lie up to?";
 	string nextThree = "Mom: Who knows, they lost me about a season back";
 	string nextFour = "Me: Oh those crazy Lying Liars...";
+	float timeLeft = 2f;
+	public GameObject triggerBox;
 
 	// Use this for initialization
 	void Start () {
@@ -33,11 +35,17 @@ public class howsMomDoing : MonoBehaviour {
 					
 					//}
 				}
+			}if (talkingController.activeString == nextFour) {
+				timeLeft -= Time.deltaTime;
+			}
+			if (timeLeft < 0) {
+				triggerBox.SetActive (false);
 			}
 		}
 	}
 	void OnTriggerEnter(Collider other){
 		triggerEntered = true;
+		talkingController.textPercentage = 0;
 		talkingController.activeString = "" + startString;
 	}
 }

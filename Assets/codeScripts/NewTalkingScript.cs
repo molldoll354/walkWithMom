@@ -15,7 +15,7 @@ public class NewTalkingScript : MonoBehaviour
 	//string responseTwo = "Me: My stomach's been bothering me.\n I can't tell if it's the reflux, stress, \n or some godforsaken combo of the two";
 	string momResponseOne = "Mom: Oh yeah, I'm so lonely without you.\nI'm crying right now from loneliness.";
 	//string momResponseTwo = "Mom: Hopefully your gastro appointment will get that sorted out.";
-	float timeLeft = 3f;
+	float timeLeft = 2f;
 	public GameObject triggerBox;
 	// Use this for initialization
 	void Start ()

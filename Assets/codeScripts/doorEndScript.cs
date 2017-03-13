@@ -16,7 +16,7 @@ public class doorEndScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (ending == true) {
-			door.transform.Rotate (0, -5f*Time.deltaTime, 0);
+			door.transform.Rotate (0, -20f*Time.deltaTime, 0);
 			timeLeft -= Time.deltaTime;
 		}
 		if (timeLeft < 0) {

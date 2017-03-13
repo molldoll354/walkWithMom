@@ -14,6 +14,8 @@ public class NewPizzaScript : MonoBehaviour
 	string nextTwo = "Mom: Don't be tempted! Go home and eat something healthy!";
 	string nextThree = "Me: Sure, I'll eat an apple with my spaghetti, then.";
 	string nextFour = "Mom: Not what I meant.";
+	float timeLeft = 2f;
+	public GameObject triggerBox;
 	// Use this for initialization
 	void Start ()
 	{
@@ -34,6 +36,12 @@ public class NewPizzaScript : MonoBehaviour
 				} else if (talkingController.activeString == nextThree) {
 					talkingController.activeString = nextFour;
 				} 
+			}
+			if (talkingController.activeString == nextFour) {
+				timeLeft -= Time.deltaTime;
+			}
+			if (timeLeft < 0) {
+				triggerBox.SetActive (false);
 			}
 		}
 	}
